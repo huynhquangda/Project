@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Ordering</title>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&family=Squada+One&display=swap"
+      rel="stylesheet"
+    />
+    <!-- BS4 & Jquery -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- css -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <div class="container-fluid bg-main-brand py-105 pt-3">
+      <div class="container bg-main-brand">
+        <div class="row" style="margin-bottom: 125px">
+          <div class="col-12">
+            <nav class="navbar navbar-expand-lg navbar-light">
+              <a class="navbar-brand text-white text-1" href="#">WHAT2EAT</a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav m-auto text-2">
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="#">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Menu</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Blog</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Contact</a>
+                  </li>
+                </ul>
+              </div>
+
+              <img src="./assets/images/Seach and cart.png" alt="" />
+            </nav>
+          </div>
+        </div>
+        <div class="row">
+          <div
+            class="col-sm-12 col-lg-6 d-flex flex-column justify-content-center align-content-center"
+            style="gap: 10px"
+          >
+            <h1 class="text-3 text-white">Authentic Home food in UK</h1>
+            <p class="text-4 text-white">
+              What2Eat is a courier service in which authentic home cook food is
+              delivered to a customer.
+            </p>
+            <div class="input-group mb-3" style="width: 398px">
+              <input
+                type="text"
+                class="form-control text-5"
+                placeholder="Search food you love"
+                aria-describedby="basic-addon2"
+                style="padding: 19px 0 19px 22px"
+              />
+              <div class="input-group-append">
+                <button class="btn btn-main text-white text-6" type="button">
+                  Search
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-lg-6">
+            <img
+              src="./assets/images/cooking.man.header.png"
+              alt=""
+              class="pl-sm-0 pl-lg-5"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Kitchen -->
+    <div class="container-fluid bg-second py-105">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="text-7 mb-3">Home Kitchen</h2>
+            <ul
+              class="nav nav-pills mb-3 btn-group text-6"
+              id="pills-tab"
+              role="tablist"
+            >
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  id="pills-home-tab"
+                  data-toggle="pill"
+                  href="#pills-home"
+                  role="tab"
+                  aria-controls="pills-home"
+                  aria-selected="true"
+                  >All</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  id="pills-profile-tab"
+                  data-toggle="pill"
+                  href="#pills-profile"
+                  role="tab"
+                  aria-controls="pills-profile"
+                  aria-selected="false"
+                  >Button</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  id="pills-contact-tab"
+                  data-toggle="pill"
+                  href="#pills-contact"
+                  role="tab"
+                  aria-controls="pills-contact"
+                  aria-selected="false"
+                  >Free delivery</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  id="pills-contact-tab"
+                  data-toggle="pill"
+                  href="#pills-contact"
+                  role="tab"
+                  aria-controls="pills-contact"
+                  aria-selected="false"
+                  >New</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  id="pills-contact-tab"
+                  data-toggle="pill"
+                  href="#pills-contact"
+                  role="tab"
+                  aria-controls="pills-contact"
+                  aria-selected="false"
+                  >Coming</a
+                >
+              </li>
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+              <div
+                class="tab-pane fade show active"
+                id="pills-home"
+                role="tabpanel"
+                aria-labelledby="pills-home-tab"
+              >
+                <!-- Dropdown -->
+                <div class="dropdown">
+                  <button
+                    class="btn btn-outline-secondary text-6 dropdown-toggle"
+                    type="button"
+                    id="dropdownMenuButton"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    Filters
+                  </button>
+                </div>
+                <!-- Card list -->
+                <div class="row" id="list-pizza">
+                  <!-- <div class="col-12">
+                    <div class="card" style="width: 18rem">
+                      <img
+                        class="card-img-top"
+                        src="./assets/images/unsplash_MqT0asuoIcU.png"
+                        alt="Card image cap"
+                      />
+                      <div class="card-body">
+                        <div class="row card-top">
+                          <p class="col-9 card-name">Home made pizza</p>
+                          <span class="col-3 card-price text-right">$19</span>
+                        </div>
+                        <div class="row card-content">
+                          <div class="col-10 card-text">
+                            <span class="card-rating badge bg-second">
+                              <img
+                                src="./assets/images/ant-design_star-filled.png"
+                                alt=""
+                              />
+                              4.7
+                            </span>
+                            <span class="card-time badge bg-second"
+                              >50-79 min</span
+                            >
+                          </div>
+                          <div class="col-2 card-add-to text-right">
+                            <img src="./assets/images/Card.png" alt="" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div> -->
+                </div>
+                <!-- Learn more -->
+                <div class="row" style="margin: 50px 0">
+                  <div class="col-12 text-center">
+                    <div class="btn btn-outline-main text-4">
+                      + Load more...
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="pills-profile"
+                role="tabpanel"
+                aria-labelledby="pills-profile-tab"
+              >
+                content
+              </div>
+              <div
+                class="tab-pane fade"
+                id="pills-contact"
+                role="tabpanel"
+                aria-labelledby="pills-contact-tab"
+              >
+                content
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Blogs -->
+    <div class="container py-105">
+      <div class="row">
+        <div class="col-12">
+          <h2 class="text-7 mb-4">Our Blogs</h2>
+        </div>
+      </div>
+      <div class="row" id="list-blogs">
+        <!-- <div class="col-3">
+          <div class="card">
+            <img class="card-img-top" src="..." alt="Card image cap" />
+            <div class="card-body">
+              <h5 class="card-title text-4 text-dark">
+                Card title that wraps to a new line
+              </h5>
+              <p class="card-text text-8">
+                This is a longer card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img-top" src="..." alt="Card image cap" />
+            <div class="card-body">
+              <h5 class="card-title">Card title that wraps to a new line</h5>
+              <p class="card-text">
+                This is a longer card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="card">
+            <img class="card-img-top" src="..." alt="Card image cap" />
+            <div class="card-body">
+              <h5 class="card-title">Card title that wraps to a new line</h5>
+              <p class="card-text">
+                This is a longer card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-3" style="gap: 20px">
+          <div class="card">
+            <img class="card-img-top" src="..." alt="Card image cap" />
+            <div class="card-body">
+              <h5 class="card-title">Card title that wraps to a new line</h5>
+              <p class="card-text">
+                This is a longer card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img-top" src="..." alt="Card image cap" />
+            <div class="card-body">
+              <h5 class="card-title">Card title that wraps to a new line</h5>
+              <p class="card-text">
+                This is a longer card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </div>
+    <!-- Contact us -->
+    <div class="container-fluid bg-second py-105">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-7">
+            <div class="row">
+              <div class="col-8">
+                <h2 class="text-7">
+                  Do you have a question or want to become a seller?
+                </h2>
+                <p class="text-8">
+                  Fill this form and our manager will contact you next 48 hours.
+                </p>
+              </div>
+              <div class="col-4"></div>
+            </div>
+
+            <form id="form-contact">
+              <div class="row form-group">
+                <div class="col-6">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Your Name"
+                    id="inp-name"
+                  />
+                </div>
+                <div class="col-6">
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Your Email"
+                    id="inp-email"
+                  />
+                </div>
+              </div>
+              <div class="row form-group">
+                <div class="col-12">
+                  <textarea
+                    name=""
+                    id="txt-message"
+                    cols="30"
+                    rows="5"
+                    class="form-control"
+                    placeholder="Your Message"
+                  ></textarea>
+                </div>
+              </div>
+              <div class="row form-group">
+                <div class="col-12">
+                  <div class="btn btn-main">Send Question</div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="col-12 col-lg-5">
+            <img
+              src="./assets/images/Food_delivery_man_riding_motorcycles.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer -->
+    <div class="container-fluid bg-main-brand pt-3">
+      <div class="container bg-main-brand">
+        <div class="row">
+          <div class="col-12">
+            <nav class="navbar navbar-expand-lg navbar-light">
+              <a class="navbar-brand text-white text-1" href="#">WHAT2EAT</a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav m-auto text-2">
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="#">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Menu</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Blog</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Contact</a>
+                  </li>
+                </ul>
+              </div>
+              <img src="./assets/images/Social Icons.png" alt="" />
+            </nav>
+          </div>
+          <hr />
+          <div class="col-12">
+            <p class="text-5 text-white text-center">
+              Copyright @2021 What2Eat
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    "use strict";
+    /*** REGION 1 - Global variables - Vùng khai báo biến, hằng số, tham số TOÀN CỤC */
+    const gBASE_URL = "https://64747ed27de100807b1b0fa4.mockapi.io/api/v1/";
+
+    /*** REGION 2 - Vùng gán / thực thi sự kiện cho các elements */
+    $(document).ready(function () {
+      // gán sự kiện load trang
+      onPageLoading();
+    });
+
+    /*** REGION 3 - Event handlers - Vùng khai báo các hàm xử lý sự kiện */
+    function onPageLoading() {
+      // load dữ liệu pizza ra giao diện
+      callApiAndLoadListPizza();
+      // load dữ liệu blogs ra giao diện
+      callApiAndLoadListBlogs();
+    }
+    /*** REGION 4 - Common funtions - Vùng khai báo hàm dùng chung trong toàn bộ chương trình*/
+    // hàm gọi api để load dữ liệu pizza ra giao diện
+    function callApiAndLoadListPizza() {
+      $.ajax({
+        url: gBASE_URL + "/pizza",
+        type: "GET",
+        success: function (res) {
+          console.log(res);
+          // load dữ liệu pizza ra giao diện
+          loadListPizza(res);
+        },
+        error: function (err) {
+          alert(err.status);
+        },
+      });
+    }
+    // hàm load dữ liệu pizza ra giao diện
+    function loadListPizza(paramPizzaObj) {
+      var vDivCardList = $("#list-pizza");
+      for (var bI = 0; bI < paramPizzaObj.length; bI++) {
+        var vDivCol = $("<div>", {
+          class: "col-12 col-md-6 col-lg-3 mb-4",
+        }).appendTo(vDivCardList);
+        var vCard = $("<div>", {
+          class: "card w-100",
+          style: "width:18rem",
+        }).appendTo(vDivCol);
+        vCard.html(`
+          
+            
+                    <img
+                      class="card-img-top"
+                      src=${paramPizzaObj[bI].imageUrl}
+                      alt="Card image cap"
+                    />
+                    <div class="card-body">
+                      <div class="row card-top">
+                        <p class="col-8 card-name">${paramPizzaObj[bI].name}</p>
+                        <span class="col-4 card-price text-right">$${paramPizzaObj[bI].price}</span>
+                      </div>
+                      <div class="row card-content">
+                        <div class="col-10 card-text">
+                          <span class="card-rating badge bg-second">
+                            <img
+                              src="./assets/images/ant-design_star-filled.png"
+                              alt=""
+                            />
+                            ${paramPizzaObj[bI].rating}
+                          </span>
+                          <span class="card-time badge bg-second"
+                            >${paramPizzaObj[bI].time}</span
+                          >
+                        </div>
+                        <div class="col-2 add-to-card">
+                          <img src="./assets/images/Card.png" class="btn-info" alt="" />
+                        </div>
+                      </div>
+                    </div>
+              
+          
+        
+        
+        `);
+      }
+    }
+    // hàm gọi api để load dữ liệu blogs ra giao diện
+    function callApiAndLoadListBlogs() {
+      $.ajax({
+        url: gBASE_URL + "/blogs",
+        type: "GET",
+        success: function (res) {
+          console.log(res);
+          // load dữ liệu blogs ra giao diện
+          loadListBlogs(res);
+        },
+        error: function (err) {
+          alert(err.status);
+        },
+      });
+    }
+    // hàm load dữ liệu blogs ra giao diện
+    function loadListBlogs(paramBlogsObj) {
+      // truy xuất phần tử row list-blogs
+      var vDivCardList = $("#list-blogs");
+      // tạo col cho blogs-left, blogs-main, blogs-right
+      var vDivColLeft = $("<div>", {
+        class: "col-12 col-md-5 col-lg-3 mb-4",
+      }).appendTo(vDivCardList);
+      var vDivColMain = $("<div>", {
+        class: "col-12 col-md-7 col-lg-6 mb-4",
+      }).appendTo(vDivCardList);
+      var vDivColRight = $("<div>", {
+        class: "col-12 col-md-12 d-md-flex d-lg-block col-lg-3 mb-4",
+      }).appendTo(vDivCardList);
+      // lấy vị trí index của blogs main
+      var vCenIndex = Math.floor(paramBlogsObj.length / 2);
+      // load dữ liệu cho blogs main
+      var vCard = $("<div>", {
+        class: "card w-100 mb-4",
+        style: "width:18rem",
+      }).appendTo(vDivColMain);
+      vCard.html(`
+        <img class="card-img-top" src=${paramBlogsObj[vCenIndex].imageUrl} alt="Card image cap" />
+            <div class="card-body">
+              <h5 class="card-title text-4">${paramBlogsObj[vCenIndex].title}</h5>
+              <p class="card-text text-8">${paramBlogsObj[vCenIndex].description}</p>
+            </div>
+        `);
+      // load dữ liệu cho vùng blogs-left
+      for (var bI = 0; bI < vCenIndex; bI++) {
+        var vCard = $("<div>", {
+          class: "card w-100 mb-4",
+          style: "width:18rem",
+        }).appendTo(vDivColLeft);
+        vCard.html(`
+        <img class="card-img-top" src=${paramBlogsObj[bI].imageUrl} alt="Card image cap" />
+            <div class="card-body">
+              <h5 class="card-title text-4">${paramBlogsObj[bI].title}</h5>
+              <p class="card-text text-8">${paramBlogsObj[bI].description}</p>
+            </div>
+        `);
+      }
+      // load dữ liệu cho vùng blogs-right
+      for (var bI = vCenIndex + 1; bI < paramBlogsObj.length; bI++) {
+        var vCard = $("<div>", {
+          class: "card w-100 mr-md-4 mb-4 mr-lg-0",
+          style: "width:18rem",
+        }).appendTo(vDivColRight);
+        vCard.html(`
+        <img class="card-img-top" src=${paramBlogsObj[bI].imageUrl} alt="Card image cap" />
+            <div class="card-body">
+              <h5 class="card-title text-4">${paramBlogsObj[bI].title}</h5>
+              <p class="card-text text-8">${paramBlogsObj[bI].description}</p>
+            </div>
+        `);
+      }
+    }
+  </script>
+</html>

@@ -1,0 +1,396 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>43.80 pizza365 V1.9</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- Import DataTable Library -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.24/css/dataTables.bootstrap4.min.css">
+    <script src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.24/js/dataTables.bootstrap4.min.js"></script>
+    <link rel="stylesheet" href="main.css">
+    <script src="./main.js"></script>
+</head>
+
+<body>
+    <div class="header">
+
+        <nav class="navbar-expand-lg navbar-light bg-warning header-nav fixed-top">
+
+            <ul class="navbar-nav d-flex justify-content-around container-menu ">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Trang chủ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Combo</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Loại pizza</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="#">Gửi đơn hàng</a>
+                </li>
+            </ul>
+
+        </nav>
+
+    </div>
+    <div class="container content">
+        <div class="row row-logo">
+            <h4 class="font-weight-bold text-warning">PIZZA 365</h4>
+
+        </div>
+        <div class="row row-logo">
+            <p class="font-italic text-warning">Truly italian!</p>
+        </div>
+        <div class="row row-carousel">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="./images/1.jpg" alt="First slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="./images/2.jpg" alt="Second slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="./images/3.jpg" alt="Third slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="./images/4.jpg" alt="Third slide">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+
+        </div>
+
+        <div class="row mt-5 text-center">
+            <div class="col-sm-12">
+                <h3 class="text-warning">Tại sao lại Pizza 365</h3>
+                <hr class="hr-title">
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-sm-3 col-title">
+                <h4 class="mb-3">Đa Dạng</h4>
+                <p>Số lượng pizza đa dạng,có đầy đủ các loại pizza hot nhất hiện nay</p>
+            </div>
+            <div class="col-sm-3 col-title">
+                <h4 class="mb-3">Chất lượng</h4>
+                <p>Nguyên liệu 100% sạch rõ nguồn gốc,quy trình chế biến đảm bảo vệ sinh an toàn thực phẩm</p>
+            </div>
+            <div class="col-sm-3 col-title">
+                <h4 class="mb-3">Hương vị</h4>
+                <p>Đảm bảo hương vị ngon,độc lạ mà bạn chỉ có thể trải nghiệm từ pizza 365</p>
+            </div>
+            <div class="col-sm-3 col-title">
+                <h4 class="mb-3">Dịch vụ</h4>
+                <p>Nhân viên thân thiện,nhà hàng hiện đại. Dịch vụ giao hàng nhanh, chất lượng, tân tiến</p>
+            </div>
+        </div>
+        <div class="row mt-5 text-center">
+            <div class="col-sm-12">
+                <h3 class="text-warning">Chọn size pizza</h3>
+                <hr class="hr-combo">
+                <p class="p-title-combo text-warning">Chọn combo pizza phù hợp với nhu cầu của bạn</p>
+            </div>
+
+        </div>
+        <div class="row row-res">
+            <div class="col-sm-4 col-res text-center">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-header bg-warning">
+                        <b>S (small)</b>
+
+                    </div>
+                    <div class="card-body">
+                        <p>Đường kính: <b>20cm</b></p>
+                        <hr>
+                        <p>Sườn nướng: <b>2</b></p>
+                        <hr>
+                        <p>Salad: <b>200g</b></p>
+                        <hr>
+                        <p>Nước ngọt: <b>2</b></p>
+                        <hr>
+                        <h3><b>150.000</b> </h3>
+                        <p>VNĐ</p>
+                    </div>
+                    <div class="card-footer">
+                        <button id="btn-size-s" data-combo-size="N" class="btn btn-warning col-sm-12">Chọn</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 col-res text-center">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-header">
+                        <b>M (medium)</b>
+
+                    </div>
+                    <div class="card-body">
+                        <p>Đường kính: <b>25cm</b></p>
+                        <hr>
+                        <p>Sườn nướng: <b>4</b></p>
+                        <hr>
+                        <p>Salad: <b>300g</b></p>
+                        <hr>
+                        <p>Nước ngọt: <b>3</b></p>
+                        <hr>
+                        <h3><b>200.000</b> </h3>
+                        <p>VNĐ</p>
+                    </div>
+                    <div class="card-footer">
+                        <button id="btn-size-m" data-combo-size="N" class="btn btn-warning col-sm-12">Chọn</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 col-res text-center">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-header bg-warning">
+                        <b>L (large)</b>
+
+                    </div>
+                    <div class="card-body">
+                        <p>Đường kính: <b>30cm</b></p>
+                        <hr>
+                        <p>Sườn nướng: <b>8</b></p>
+                        <hr>
+                        <p>Salad: <b>500g</b></p>
+                        <hr>
+                        <p>Nước ngọt: <b>4</b></p>
+                        <hr>
+                        <h3><b>250.000</b> </h3>
+                        <p>VNĐ</p>
+                    </div>
+                    <div class="card-footer">
+                        <button id="btn-size-l" data-combo-size="N" class="btn btn-warning col-sm-12">Chọn</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5 ">
+            <div class="col-sm-12 text-center">
+                <h3 class="text-warning">Chọn loại pizza</h3>
+                <hr class="hr-loai-pizza">
+
+            </div>
+        </div>
+        <div class="row row-res row-loai-pizza">
+            <div class="col-sm-4 col-res">
+                <div class="card" style="width: 18rem;">
+
+                    <img class="card-img-top" src="./images/seafood.jpg" alt="">
+
+                    <div class="card-body">
+                        <p><b>OCEAN MANIA</b></p>
+                        <p class="text-loai-pizza">PIZZA HẢI SẢN SỐT MAYONNAISE</p>
+                        <p>Sốt Cà Chua, Phô Mai Mozzarella, Tôm, Mực, Thanh Cua, Hành Tây</p>
+                        <button id="btn-ocean" data-loai-pizza="N" class="btn btn-warning col-sm-12">Chọn</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 col-res">
+                <div class="card" style="width: 18rem;">
+
+                    <img class="card-img-top" src="./images/hawaiian.jpg" alt="">
+
+                    <div class="card-body">
+                        <p><b>HAWAIIAN</b></p>
+                        <p class="text-loai-pizza">PIZZA DĂM BÔNG DỨA KIỂU HAWAII</p>
+                        <p>Sốt Cà Chua, Phô Mai Mozzarella, Thịt Dăm Bông, Thơm</p>
+                        <button data-loai-pizza="N" id="btn-haiwai" class="btn btn-warning col-sm-12">Chọn</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 col-res">
+                <div class="card" style="width: 18rem;">
+
+                    <img class="card-img-top" src="./images/bacon.jpg" alt="">
+
+
+                    <div class="card-body">
+                        <p><b>CHEESY CHICKEN BACON</b></p>
+                        <p class="text-loai-pizza">PIZZA GÀ PHÔ MAI THỊT HEO XÔNG KHÓI</p>
+                        <p>Xốt Phô Mai, Thịt Gà, Thịt Heo Muối, Phô Mai Mozzarella, Cà Chua </p>
+                        <button data-loai-pizza="N" id="btn-bacon" class="btn btn-warning col-sm-12">Chọn</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5 ">
+            <div class="col-sm-12 text-center">
+                <h3 class="text-warning">Chọn đồ uống</h3>
+                <hr class="hr-loai-pizza">
+
+            </div>
+
+        </div>
+        <div class="row row-drink">
+
+            <select name="" id="select-drink" class="form-control">
+                <option value="">Tất cả loại nước uống</option>
+            </select>
+
+        </div>
+
+        <div class="row mt-5 ">
+            <div class="col-sm-12 text-center">
+                <h3 class="text-warning">Gửi đơn hàng</h3>
+                <hr class="hr-loai-pizza">
+
+            </div>
+
+        </div>
+
+        <form action="" class="row">
+            <label for="">Tên</label>
+            <input type="text" name="" id="inp-ten" class="form-control mb-4" placeholder="Nhập tên">
+            <label for="">Email</label>
+            <input type="text" name="" id="inp-email" class="form-control mb-4" placeholder="Nhập email">
+            <label for="">Số điện thoại</label>
+            <input type="text" name="" id="inp-so-dien-thoai" class="form-control mb-4"
+                placeholder="Nhập số điện thoại">
+            <label for="">Địa chỉ</label>
+            <input type="text" name="" id="inp-dia-chi" class="form-control mb-4" placeholder="Nhập địa chỉ">
+            <label for="">Mã giảm giá</label>
+            <input type="text" name="" id="inp-ma-giam-gia" class="form-control mb-4" placeholder="Nhập mã giảm giá">
+            <label for="">Lời nhắn</label>
+            <input type="text" name="" id="inp-loi-nhan" class="form-control mb-4" placeholder="Nhập lời nhắn">
+            <button id="btn-send" class="form-control btn btn-warning">Gửi</button>
+        </form>
+
+
+
+    </div>
+
+    <div class="footer bg-warning mt-5 text-center py-5">
+        <div class="row mb-4">
+            <div class="col-sm-12">
+                <h4><b>Footer</b></h4>
+            </div>
+
+        </div>
+        <div class="row text-center mb-4">
+            <div class="col-sm-12">
+                <button class="btn btn-dark"><i class="fas fa-arrow-up mr-2"></i>To the top</button>
+            </div>
+
+        </div>
+        <div class="row mb-3">
+            <div class="col-sm-12">
+                <i class="fab fa-facebook-square"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fas fa-bell"></i>
+                <i class="fab fa-pinterest-p"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-linkedin-in"></i>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <p>Powered by DEVCAMP</p>
+            </div>
+        </div>
+
+    </div>
+    <!-- modal -->
+    <div id="modal-order" class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Thông tin đơn hàng</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <label for="">Họ và tên</label>
+                    <input type="text" name="" id="inp-modal-ten" class="form-control mb-3">
+                    <label for="">Số điện thoại</label>
+                    <input type="text" name="" id="inp-modal-so-dien-thoai" class="form-control mb-3">
+                    <label for="">Địa chỉ</label>
+                    <input type="text" name="" id="inp-modal-dia-chi" class="form-control mb-3">
+                    <label for="">Lời nhắn</label>
+                    <input type="text" name="" id="inp-modal-loi-nhan" class="form-control mb-3">
+                    <label for="">Mã giảm giá</label>
+                    <input type="text" name="" id="inp-modal-ma-giam-gia" class="form-control mb-3">
+                    <label for="">Thông tin chi tiết</label>
+
+                    <div id="info-detail" class="overflow-auto p-3 bg-light">
+
+
+                    </div>
+
+
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-danger px-5" data-dismiss="modal">Quay lại</button>
+                    <button id="btn-order" class="btn btn-warning px-5">Tạo đơn</button>
+                </div>
+
+
+
+            </div>
+
+        </div>
+    </div>
+    </div>
+    <!-- end modal -->
+    <!-- modal result -->
+    <div id="modal-result" class="modal " tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <!-- <div class="modal-header">
+
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div> -->
+                <div id="" class="modal-body bg-warning" style="border: 20px solid #5f5f5f;">
+                    <h5> <b>Cảm ơn bạn đã đặt hàng tại Pizza 365.Mã đơn hàng của bạn là:</b></h5>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <label for="">Mã đơn hàng:</label>
+                        </div>
+                        <div class="col-sm-8">
+                            <input type="text" name="" id="inp-order-code" class="form-control">
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- end -->
+
+
+</body>
+
+
+
+</html>

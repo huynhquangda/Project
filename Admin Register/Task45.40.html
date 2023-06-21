@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Page Simple</title>
+
+    <!-- Google Font: Source Sans Pro -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
+    <link rel="stylesheet" href="plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="dist/css/adminlte.min.css">
+
+
+</head>
+
+<body class="hold-transition sidebar-mini">
+    <!-- Site wrapper -->
+    <div class="wrapper">
+        <!-- Navbar -->
+        <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+            <!-- Left navbar links -->
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+                </li>
+                <li class="nav-item d-none d-sm-inline-block">
+                    <a href="../../index3.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item d-none d-sm-inline-block">
+                    <a href="#" class="nav-link">Contact</a>
+                </li>
+            </ul>
+
+            <!-- Right navbar links -->
+            <ul class="navbar-nav ml-auto">
+                <!-- Navbar Search -->
+                <li class="nav-item">
+                    <a class="nav-link" data-widget="navbar-search" href="#" role="button">
+                        <i class="fas fa-search"></i>
+                    </a>
+                    <div class="navbar-search-block">
+                        <form class="form-inline">
+                            <div class="input-group input-group-sm">
+                                <input class="form-control form-control-navbar" type="search" placeholder="Search"
+                                    aria-label="Search">
+                                <div class="input-group-append">
+                                    <button class="btn btn-navbar" type="submit">
+                                        <i class="fas fa-search"></i>
+                                    </button>
+                                    <button class="btn btn-navbar" type="button" data-widget="navbar-search">
+                                        <i class="fas fa-times"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </li>
+
+                <!-- Messages Dropdown Menu -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link" data-toggle="dropdown" href="#">
+                        <i class="far fa-comments"></i>
+                        <span class="badge badge-danger navbar-badge">3</span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+                        <a href="#" class="dropdown-item">
+                            <!-- Message Start -->
+                            <div class="media">
+                                <img src="dist/img/user1-128x128.jpg" alt="User Avatar"
+                                    class="img-size-50 mr-3 img-circle">
+                                <div class="media-body">
+                                    <h3 class="dropdown-item-title">
+                                        Brad Diesel
+                                        <span class="float-right text-sm text-danger"><i class="fas fa-star"></i></span>
+                                    </h3>
+                                    <p class="text-sm">Call me whenever you can...</p>
+                                    <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+                                </div>
+                            </div>
+                            <!-- Message End -->
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item">
+                            <!-- Message Start -->
+                            <div class="media">
+                                <img src="dist/img/user8-128x128.jpg" alt="User Avatar"
+                                    class="img-size-50 img-circle mr-3">
+                                <div class="media-body">
+                                    <h3 class="dropdown-item-title">
+                                        John Pierce
+                                        <span class="float-right text-sm text-muted"><i class="fas fa-star"></i></span>
+                                    </h3>
+                                    <p class="text-sm">I got your message bro</p>
+                                    <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+                                </div>
+                            </div>
+                            <!-- Message End -->
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item">
+                            <!-- Message Start -->
+                            <div class="media">
+                                <img src="dist/img/user3-128x128.jpg" alt="User Avatar"
+                                    class="img-size-50 img-circle mr-3">
+                                <div class="media-body">
+                                    <h3 class="dropdown-item-title">
+                                        Nora Silvester
+                                        <span class="float-right text-sm text-warning"><i
+                                                class="fas fa-star"></i></span>
+                                    </h3>
+                                    <p class="text-sm">The subject goes here</p>
+                                    <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+                                </div>
+                            </div>
+                            <!-- Message End -->
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item dropdown-footer">See All Messages</a>
+                    </div>
+                </li>
+                <!-- Notifications Dropdown Menu -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link" data-toggle="dropdown" href="#">
+                        <i class="far fa-bell"></i>
+                        <span class="badge badge-warning navbar-badge">15</span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+                        <span class="dropdown-item dropdown-header">15 Notifications</span>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item">
+                            <i class="fas fa-envelope mr-2"></i> 4 new messages
+                            <span class="float-right text-muted text-sm">3 mins</span>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item">
+                            <i class="fas fa-users mr-2"></i> 8 friend requests
+                            <span class="float-right text-muted text-sm">12 hours</span>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item">
+                            <i class="fas fa-file mr-2"></i> 3 new reports
+                            <span class="float-right text-muted text-sm">2 days</span>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item dropdown-footer">See All Notifications</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-widget="fullscreen" href="#" role="button">
+                        <i class="fas fa-expand-arrows-alt"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#" role="button">
+                        <i class="fas fa-th-large"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <!-- /.navbar -->
+
+        <!-- Main Sidebar Container -->
+        <aside class="main-sidebar sidebar-dark-primary elevation-4">
+            <!-- Brand Logo -->
+            <a href="../../index3.html" class="brand-link">
+                <img src="dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
+                    style="opacity: .8">
+                <span class="brand-text font-weight-light">Devcamp</span>
+            </a>
+
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <!-- Sidebar user (optional) -->
+                <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+                    <div class="image">
+                        <img src="dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+                    </div>
+                    <div class="info">
+                        <a href="#" class="d-block">DaHQ</a>
+                    </div>
+                </div>
+
+                <!-- SidebarSearch Form -->
+                <div class="form-inline">
+                    <div class="input-group" data-widget="sidebar-search">
+                        <input class="form-control form-control-sidebar" type="search" placeholder="Search"
+                            aria-label="Search">
+                        <div class="input-group-append">
+                            <button class="btn btn-sidebar">
+                                <i class="fas fa-search fa-fw"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sidebar Menu -->
+                <nav class="mt-2">
+                    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu"
+                        data-accordion="false">
+                        <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+                        <li class="nav-item menu-open">
+                            <a href="#" class="nav-link act active">
+                                <i class="nav-icon fas fa-tachometer-alt"></i>
+                                <p>
+                                    Dashboard
+                                    <i class="right fas fa-angle-left"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a href="../../index.html" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Chart</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="../../index2.html" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Form</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="../../index3.html" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Dashboard v3</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </nav>
+                <!-- /.sidebar-menu -->
+            </div>
+            <!-- /.sidebar -->
+        </aside>
+
+        <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper">
+            <!-- Content Header (Page header) -->
+            <section class="content-header">
+                <div class="container-fluid">
+                    <div class="row mb-2">
+                        <div class="col-sm-6">
+                            <h1>Blank Page</h1>
+                        </div>
+                        <div class="col-sm-6">
+                            <ol class="breadcrumb float-sm-right">
+                                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                <li class="breadcrumb-item active">Blank Page</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div><!-- /.container-fluid -->
+            </section>
+
+            <!-- Main content -->
+            <section class="content">
+
+                <div class="container-fluid">
+                    <h3 class="text-center mb-3 mt-3">Danh sách người dùng đăng ký</h3>
+                    <div class="jumbotron">
+                        <div class="row">
+                            <div class="col-sm-2 text-right">
+                                <label for="">Country</label>
+                            </div>
+                            <div class="col-sm-3">
+                                <select name="" id="" class="form-control select2">
+                                    <option value="">Chọn Country</option>
+                                </select>
+                            </div>
+                            <div class="col-sm-2 text-right">
+                                <label for="">Standard</label>
+                            </div>
+                            <div class="col-sm-3">
+                                <select name="" id="" class="form-control select2">
+                                    <option value="">Chọn standard</option>
+                                </select>
+                            </div>
+                            <div class="col-sm-2">
+                                <button class="btn btn-success">Lọc</button>
+                            </div>
+                        </div>
+                    </div>
+                    <button id="btn-create" class="btn btn-success mt-2 mb-3 ">Thêm User</button>
+                    <table id="user-table" class="table table-bordered table-triped">
+                        <thead>
+                            <tr>
+                                <th>Id</th>
+                                <th>First Name</th>
+                                <th>Last Name</th>
+                                <th>Country</th>
+                                <th>Subject</th>
+                                <th>CustomerType</th>
+                                <th>RegisterStatus</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                    </table>
+
+                </div>
+            </section>
+            <!-- /.content -->
+        </div>
+        <!-- /.content-wrapper -->
+
+        <footer class="main-footer">
+            <div class="float-right d-none d-sm-block">
+                <b>Version</b> 3.2.0
+            </div>
+            <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights
+            reserved.
+        </footer>
+
+        <!-- Control Sidebar -->
+        <aside class="control-sidebar control-sidebar-dark">
+            <!-- Control sidebar content goes here -->
+        </aside>
+        <!-- /.control-sidebar -->
+    </div>
+    <!-- ./wrapper -->
+
+    <!-- jQuery -->
+    <script src="plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- AdminLTE App -->
+    <!-- DataTables  & Plugins -->
+    <script src="plugins/datatables/jquery.dataTables.min.js"></script>
+    <script src="plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+    <script src="plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+    <script src="plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+    <script src="plugins/datatables-buttons/js/dataTables.buttons.min.js"></script>
+    <script src="plugins/datatables-buttons/js/buttons.bootstrap4.min.js"></script>
+    <script src="plugins/jszip/jszip.min.js"></script>
+    <script src="plugins/pdfmake/pdfmake.min.js"></script>
+    <script src="plugins/pdfmake/vfs_fonts.js"></script>
+    <script src="plugins/datatables-buttons/js/buttons.html5.min.js"></script>
+    <script src="plugins/datatables-buttons/js/buttons.print.min.js"></script>
+    <script src="plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
+    <script src="dist/js/adminlte.min.js"></script>
+    <!-- AdminLTE for demo purposes -->
+    <script src="dist/js/demo.js"></script>
+    <script>
+        "use strict";
+        /*** REGION 1 - Global variables - Vùng khai báo biến, hằng số, tham số TOÀN CỤC */
+        const gREQUEST_STATUS_OK = 200;
+        const gREQUEST_STATUS_DELETE_OK = 204;
+        const gREQUEST_READY_STATUS_FINISH_AND_OK = 4;
+        const gREQUEST_STATUS_CREATE_OK = 201;
+        const gBASE_URL = "http://203.171.20.210:8080/crud-api/users/";
+        const gCONTENT_TYPE = "application/json;charset=UTF-8";
+        var gColName = ["id", "firstname", "lastname", "country", "subject", "customerType", "registerStatus", "action"];
+        const gCOL_ID = 0;
+        const gCOL_FIRST_NAME = 1;
+        const gCOL_LAST_NAME = 2;
+        const gCOL_COUNTRY = 3;
+        const gCOL_SUBJECT = 4;
+        const gCOL_CUSTOMER_TYPE = 5;
+        const gCOL_REGISTER_STATUS = 6;
+        const gCOL_ACTION = 7;
+        var gDataUser = null;
+
+
+
+        /*** REGION 2 - Vùng gán / thực thi sự kiện cho các elements */
+        $(document).ready(function () {
+            onLoadPage();
+
+            $("#btn-create").on("click", function () {
+                $("#create-voucher-modal").modal("show");
+            })
+            $("#btn-create-user").on("click", function () {
+                onBtnCreateUser();
+            })
+            $("#user-table").on("click", ".btn-update", function () {
+
+                $("#update-user-modal").modal("show");
+                fillDataInputUpdate(this);
+
+            })
+            $("#btn-update-user").on("click", function () {
+                onBtnUpdateUser();
+            })
+            $("#user-table").on("click", ".btn-delete", function () {
+                $("#delete-user-modal").modal("show");
+                getDataDelete(this);
+
+            })
+            $("#btn-confirm-delete-user").on("click", function () {
+                onBtnDeleteUser();
+            })
+
+        })
+        /*** REGION 3 - Event handlers - Vùng khai báo các hàm xử lý sự kiện */
+        function fillDataTable(paramElement) {
+            $("#user-table").DataTable({
+                data: paramElement,
+                columns: [
+                    { data: gColName[gCOL_ID] },
+                    { data: gColName[gCOL_FIRST_NAME] },
+                    { data: gColName[gCOL_LAST_NAME] },
+                    { data: gColName[gCOL_COUNTRY] },
+                    { data: gColName[gCOL_SUBJECT] },
+                    { data: gColName[gCOL_CUSTOMER_TYPE] },
+                    { data: gColName[gCOL_REGISTER_STATUS] },
+                    { data: gColName[gCOL_ACTION] },
+
+                ],
+                columnDefs: [
+                    {
+                        targets: gCOL_ACTION,
+                        defaultContent: "<button class='btn btn-success btn-update'>Sửa</button>" +
+                            "<button class='ml-2 btn btn-danger btn-delete'>Xóa</button>"
+                    }
+                ]
+            })
+
+        }
+
+        function onLoadPage() {
+            $.ajax({
+                url: gBASE_URL,
+                type: "GET",
+                success: function (paramRes) {
+                    fillDataTable(paramRes);
+                    // console.log(paramRes);
+                },
+                error: function (paramErr) {
+                    console.log(paramErr.status);
+                }
+
+            })
+        }
+        // function onBtnDelete() {
+        //     $("#user-table").on("click", ".btn-delete", function () {
+        //         getDataBtn(this);
+        //     })
+        // }
+
+        function onBtnCreateUser() {
+            var vUserObj = {
+                firstname: "",
+                lastname: "",
+                country: "",
+                subject: "",
+                customerType: "",
+            }
+            thuThapThongTin(vUserObj);
+
+            var vCheck = validateDataUser(vUserObj);
+            if (vCheck) {
+                var vJsonUser = JSON.stringify(vUserObj);
+                $.ajax({
+                    url: gBASE_URL,
+                    type: "POST",
+                    data: vJsonUser,
+                    contentType: gCONTENT_TYPE,
+                    success: function (paramRes) {
+                        console.log(paramRes);
+                        handleCreate();
+                    },
+                    error: function (paramErr) {
+                        console.log(paramErr.status);
+                    }
+
+                })
+            }
+
+        }
+        function handleCreate() {
+            alert("Thêm User Thành Công!");
+            loadPageTime();
+            clearInputUser();
+            $("#create-voucher-modal").modal("hide");
+        }
+
+        function onBtnUpdateUser(paramDataUser) {
+            var vUserObj = {
+                firstname: "",
+                lastname: "",
+                country: "",
+                subject: "",
+                customerType: "",
+            }
+
+
+            thuThapThongTinUpdateUser(vUserObj);
+
+            $.ajax({
+                url: gBASE_URL + gDataUser.id,
+                type: "PUT",
+                data: JSON.stringify(vUserObj),
+                contentType: gCONTENT_TYPE,
+                success: function (paramRes) {
+                    handleUpdate();
+
+                },
+                error: function (paramErr) {
+                    console.log(paramErr.status);
+                }
+
+            })
+
+        }
+        // ham lay data roww delete
+        function getDataDelete(paramElement) {
+            gDataUser = getDataBtn(paramElement);
+        }
+        function onBtnDeleteUser() {
+
+            $.ajax({
+                url: gBASE_URL + gDataUser.id,
+                type: "DELETE",
+                contentType: gCONTENT_TYPE,
+                success: function (paramRes) {
+                    handleDelete();
+                },
+                error: function (paramErr) {
+                    console.log(paramErr.status);
+                }
+
+            })
+        }
+
+        /*** REGION 4 - Common funtions - Vùng khai báo hàm dùng chung trong toàn bộ chương trình*/
+        function getDataBtn(paramElement) {
+            var vRow = $(paramElement).closest("tr");
+            var vTable = $("#user-table").DataTable();
+            var vDataRow = vTable.row(vRow).data();
+
+            return vDataRow;
+
+        }
+        function thuThapThongTin(paramUser) {
+            paramUser.firstname = $("#inp-fname").val().trim();
+            paramUser.lastname = $("#inp-lname").val().trim();
+            paramUser.subject = $("#inp-subject").val().trim();
+            paramUser.country = $("#select-country option:selected").text();
+            paramUser.customerType = $("#select-customer option:selected").text();
+
+        }
+        function validateDataUser(paramUser) {
+            if (paramUser.firstname == "" || paramUser.lastname == "" || paramUser.subject == "") {
+                alert("Các trường khoong được bỏ trống!");
+                return false;
+            }
+            else if (paramUser.country == "Chọn country") {
+                alert("Chọn country!");
+                return false;
+            }
+            else if (paramUser.customerType == "Chọn Customer") {
+                alert("chọn customerType!");
+                return false;
+            }
+            return true;
+        }
+
+        function clearInputUser() {
+            $("#inp-fname").val("");
+            $("#inp-lname").val("");
+            $("#inp-subject").val("");
+            $("#select-country option:selected").text("Chọn country");
+            $("#select-customer option:selected").text("Chọn Customer");
+        }
+        function loadPageTime() {
+            location.reload();
+        }
+        function fillDataInputUpdate(paramUpdate) {
+            gDataUser = getDataBtn(paramUpdate);
+            $("#inp-fname-up").val(gDataUser.firstname);
+            $("#inp-lname-up").val(gDataUser.lastname);
+            $("#inp-subject-up").val(gDataUser.subject);
+            $("#select-country-up option:selected").text(gDataUser.country);
+            $("#select-cutomer-up option:selected").text(gDataUser.customerType);
+            console.log(gDataUser);
+            console.log(gDataUser.firstname + " hello")
+
+        }
+        function thuThapThongTinUpdateUser(paramUser) {
+            paramUser.firstname = $("#inp-fname-up").val().trim();
+            paramUser.lastname = $("#inp-lname-up").val().trim();
+            paramUser.subject = $("#inp-subject-up").val().trim();
+            paramUser.country = $("#select-country-up option:selected").text();
+            paramUser.customerType = $("#select-cutomer-up option:selected").text();
+        }
+        function handleUpdate() {
+            alert("update user thành công!");
+            loadPageTime();
+            $("#update-user-modal").modal("hide");
+        }
+        function handleDelete() {
+            alert("Xóa thành công!");
+            loadPageTime();
+            $("#delete-user-modal").modal("hide");
+
+        }
+
+
+
+    </script>
+</body>
+
+</html>

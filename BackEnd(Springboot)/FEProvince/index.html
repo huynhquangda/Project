@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="mt-5">
+        <div class="container jumbotron">
+            <h2 class="text-center">Chọn Thành Phố</h2>
+            <div class="row">
+                <div class="col-sm-2">
+                    <label for="">Tỉnh/Thành Phố</label>
+                </div>
+                <div class="col-sm-2">
+                    <select name="" id="select-province" class="form-control"></select>
+                </div>
+                <div class="col-sm-2">
+                    <label for="">Quận/Huyện</label>
+                </div>
+                <div class="col-sm-2">
+                    <select name="" id="select-district" class="form-control"></select>
+                </div>
+                <div class="col-sm-2">
+                    <label for="">Xã/Phường</label>
+                </div>
+                <div class="col-sm-2">
+                    <select name="" id="select-ward" class="form-control"></select>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+<script>
+    // *** Region1 ****//
+    const gBASE = "http://localhost:8081/province";
+    const gBASE_DISTRICT = "http://localhost:8081/provinceId"
+    const gBASE_WARD = "http://localhost:8081/districtId"
+    var gDataAll = [];
+    // *** Region2 ****//
+    $(document).ready(function () {
+        onLoadDataProvince();
+        $("#select-province").on("change", function () {
+            $("#select-district").html("");
+
+            onLoadDataDistrict(this.value);
+
+
+        })
+        $("#select-district").on("change", function () {
+            $("#select-ward").html("");
+            console.log(this.value);
+
+            onLoadDataWard(this.value);
+
+
+        })
+
+    })
+    // *** Region3 ****//
+    function onLoadDataProvince() {
+        $.ajax({
+            url: gBASE,
+            type: "GET",
+            success: function (paramRes) {
+                handleDataProvince(paramRes);
+                gDataAll = paramRes;
+            },
+            error: function (paramErr) {
+                alert(paramErr.status);
+            }
+
+        })
+    }
+    function onLoadDataDistrict(paramId) {
+        $.ajax({
+            url: gBASE_DISTRICT + "?provinceId=" + paramId,
+            type: "GET",
+            success: function (paramRes) {
+                handleDataDistrict(paramRes);
+
+            },
+            error: function (paramErr) {
+                alert(paramErr.status);
+            }
+
+        })
+    }
+    function onLoadDataWard(paramId) {
+        $.ajax({
+            url: gBASE_WARD + "?districtId=" + paramId,
+            type: "GET",
+            success: function (paramRes) {
+                handleDataWard(paramRes);
+                console.log(paramRes);
+
+            },
+            error: function (paramErr) {
+                alert(paramErr.status);
+            }
+
+        })
+    }
+    // *** Region4 ****//
+    function handleDataProvince(paramRes) {
+        for (var bI = 0; bI < paramRes.length; bI++) {
+            $("#select-province").append($("<option>", {
+                text: paramRes[bI].name,
+                value: paramRes[bI].id,
+            }))
+        }
+    }
+    function handleDataDistrict(paramRes) {
+
+        for (var bI = 0; bI < paramRes.length; bI++) {
+            $("#select-district").append($("<option>", {
+                text: paramRes[bI].name,
+                value: paramRes[bI].id,
+            }))
+        }
+    }
+    function handleDataWard(paramRes) {
+
+        for (var bI = 0; bI < paramRes.length; bI++) {
+            $("#select-ward").append($("<option>", {
+                text: paramRes[bI].name,
+                value: paramRes[bI].prefix,
+            }))
+        }
+    }
+
+
+</script>
+
+</html>

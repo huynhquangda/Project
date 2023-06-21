@@ -1,0 +1,161 @@
+@font-face {
+  font-family: "Gilroy";
+  src: local("Gilroy Medium"), local("Gilroy-Medium"),
+    url("../fonts/Gilroy-Medium.woff2") format("woff2"),
+    url("../fonts/Gilroy-Medium.woff") format("woff"),
+    url("../fonts/Gilroy-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SFProText";
+  src: url("../fonts/SFProText-Regular.woff2") format("woff2"),
+    url("../fonts/SFProText-Regular.woff") format("woff"),
+    url("../fonts/SFProText-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+textarea {
+  resize: none;
+}
+body {
+  font-family: "SFProText";
+}
+.py-105 {
+  padding: 105px 0;
+}
+.bg-main-brand {
+  background-color: #1ac073;
+}
+.btn-main {
+  background: #f3ba00;
+  border-color: #f3ba00;
+}
+.btn-outline-main {
+  background: transparent;
+  border-color: #f3ba00;
+}
+.bg-second {
+  background: #f7f8fa;
+}
+.text-1 {
+  font-family: "Squada One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 20px;
+  letter-spacing: -0.012em;
+}
+.text-2 {
+  font-family: "SFProText";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: -0.012em;
+}
+.text-3 {
+  font-family: "Gilroy";
+  font-size: 70px;
+  line-height: 82px;
+}
+.text-4 {
+  font-family: "SFProText";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -0.012em;
+  color: #101115;
+}
+.text-5 {
+  font-family: "SFProText";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: -0.012em;
+  color: #929292;
+}
+.text-6 {
+  font-family: "SFProText";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -0.012em;
+}
+.text-7 {
+  font-family: "Gilroy";
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: -0.012em;
+}
+.text-8 {
+  font-family: "SFProText";
+  font-style: normal;
+  font-weight: 200;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: -0.012em;
+  color: #1b1c21;
+}
+.nav-pills a.nav-link {
+  color: #929292;
+  border: 1px solid #f3ba00;
+  border-radius: 0;
+  padding: 13px 40px;
+}
+.nav-pills .nav-item:first-child a.nav-link {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.nav-pills .nav-item:last-child a.nav-link {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.nav-pills a.nav-link.active,
+.nav-pills .show > .nav-link {
+  color: #000;
+  background: #f3ba00;
+}
+.dropdown button {
+  color: #929292;
+  border: 1px solid #929292;
+  border-radius: 10px;
+  padding: 0.75rem 0.75rem;
+  margin: 38px 0;
+}
+.dropdown-toggle:after {
+  margin-left: 12em;
+}
+.card {
+  border-radius: 10px;
+}
+.card-columns {
+  widows: unset;
+}
+.form-control {
+  border-radius: 10px;
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.25);
+  border: 0;
+  padding: 25px;
+}
+.form-control::placeholder {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -0.012em;
+  color: #929292;
+}
+hr {
+  width: 100%;
+  border: 1px solid #fff;
+}

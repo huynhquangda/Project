@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fresh - Learning Mobile App!</title>
+
+  <!-- Nhúng các thư viện BS4 & jQuery, awesome font -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+  <!-- Các file css và js tự định nghĩa thêm -->
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <!-- 1. Menu header  -->
+  <div class="container">
+    <div class="header">
+      <nav class="navbar navbar-light">
+        <a class="navbar-brand" href="#">
+          <img src="./images/logo-fresh.png" width="60" height="60" class="" alt="">
+
+        </a>
+
+        <ul class="navbar-nav  d-inline-block">
+          <li class="nav-item active  d-inline-block pr-4">
+            <a class="nav-link d-inline-block menu-text" href="#">COURSES</a>
+          </li>
+          <li class="nav-item active   d-inline-block pr-4">
+            <a class="nav-link menu-text" href="#">TEACHERS </a>
+          </li>
+          <li class="nav-item active   d-inline-block pr-4">
+            <a class="nav-link menu-text" href="#">DOCS </a>
+          </li>
+          <li class="nav-item active   d-inline-block pr-5">
+            <button class="btn btn-primary rounded-pill">Login</button>
+          </li>
+
+        </ul>
+      </nav>
+    </div>
+
+    <!-- 2. Highlight section -->
+    <div class="content mt-5">
+      <div class="row">
+        <div class="col-sm-5">
+          <p class="title-content">Welcome to Fresh Mobile App</p>
+          <p class="description-content">Fresh Mobile App is an online learning and teaching marketplace with over 5000
+            courses and 1 million
+            students. Instructor and expertly crafted courses, designed for the modern students and entrepreneur.
+          </p>
+          <p class="mt-2">Download the app now :</p>
+          <div class="row-download d-flex flex-row">
+            <div class="">
+              <button class="btn btn-primary rounded-pill px-3 py-2"><i class="fab fa-apple"></i> APP
+                STORE</button>
+            </div>
+            <div class="ml-3">
+              <button class="btn btn-primary rounded-pill px-3 py-2"><i class=" fab fa-google-play"></i> GOOGLE
+                PLAY</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <img class="img-holding-phone" src="./images/holding-phone.svg" alt="">
+        </div>
+      </div>
+    </div>
+
+
+    <!-- 3. Các chức năng (features) -->
+    <div class="feature">
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="containerr">
+            <div class="phone">
+              <div class="notch-container">
+                <div class="notch"></div>
+              </div>
+              <img src="./images/screenshot-phone.png" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 col-feature">
+          <div class="row">
+            <div class="col-sm-2 text-right pt-3">
+              <i class="fas fa-universal-access fa-lg text-primary"></i>
+            </div>
+            <div class="col-sm-10">
+              <b>Accessible</b>
+              <p class="mt-1">Built with accessibility in mind and following best practices.
+              </p>
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-sm-2 text-right pt-3">
+              <i class="fas fa-book fa-lg text-primary"></i>
+            </div>
+            <div class="col-sm-10">
+              <b>Thousand courses</b>
+              <p class="mt-1">More than 1600 courses from the most popular Teachers in the world
+              </p>
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-sm-2 text-right pt-3">
+              <i class="fas fa-building fa-lg text-primary"></i>
+            </div>
+            <div class="col-sm-10">
+              <b>Easy to use</b>
+              <p class="mt-1">Easily customize your profile and your learning center.
+              </p>
+            </div>
+          </div>
+
+
+
+        </div>
+        <div class="col-sm-4 col-feature">
+          <div class="row">
+            <div class="col-sm-2 text-right pt-3">
+              <i class="fas fa-mobile-alt fa-lg text-primary"></i>
+            </div>
+            <div class="col-sm-10">
+              <b>Mobile First</b>
+              <p class="mt-1">Get best experience with mobile first User Interface
+              </p>
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-sm-2 text-right pt-3">
+              <i class="fas fa-download fa-lg text-primary"></i>
+            </div>
+            <div class="col-sm-10">
+              <b>Content up to date</b>
+              <p class="mt-1">The content often be up to date by teachers
+              </p>
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-sm-2 text-right pt-3">
+              <i class="fas fa-user fa-lg text-primary"></i>
+            </div>
+            <div class="col-sm-10">
+              <b>Many ways to login</b>
+              <p class="mt-1">Login with email, account or facebook
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4. khách hàng phản hồi và bảng giá -->
+      <hr class="hr-simple">
+      <div class="response mt-2">
+        <div class="row my-4">
+          <div class="col-sm-12 text-center">
+            <p class="title-customer">What our customers are saying...</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4 text-center col-customer">
+            <div class="card pb-4" style="width: 22rem;">
+              <div class="row mt-5">
+                <div class="col-sm-12">
+                  <img src="./images/customers/leo-gill.jpg" alt="" class="rounded-circle customer">
+                </div>
+              </div>
+
+              <p class="mt-3 px-5">This app is awesome! We've seen amazing results already.
+              </p>
+              <p class="mt-2 teacher-name">LEO GILL</p>
+            </div>
+
+
+          </div>
+          <div class="col-sm-4 text-center col-customer">
+            <div class="card pb-4" style="width: 22rem;">
+              <div class="row mt-5">
+                <div class="col-sm-12">
+                  <img src="./images/customers/renee-sims.jpg" alt="" class="rounded-circle customer">
+                </div>
+              </div>
+
+              <p class="mt-3 px-5">It really saves me time and effort. This app is exactly what our business has been
+                lacking.
+              </p>
+              <p class="mt-2  teacher-name">RENEE SIMS</p>
+            </div>
+
+
+          </div>
+          <div class="col-sm-4 text-center col-customer">
+            <div class="card pb-4" style="width: 22rem;">
+              <div class="row mt-5">
+                <div class="col-sm-12">
+                  <img src="./images/customers/dallas-kwok.jpg" alt="" class="rounded-circle customer">
+                </div>
+              </div>
+
+              <p class="mt-3 px-5">This app impressed me on multiple levels.
+
+              </p>
+              <p class="mt-2  teacher-name">DALLAS KWOK</p>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="simple mt-5 pt-5">
+        <hr class="hr-simple">
+        <div class="row">
+          <div class="col-sm-12 text-center">
+            <p class="title-customer">Simple pricing</p>
+          </div>
+
+        </div>
+        <div class="row row-package mt-4 px-5" style="width: 800px;">
+          <div class="col-sm-6">
+            <div class="card" style="width: 20rem;">
+              <p class="text-center text-package mt-3">Starter</p>
+              <p class="text-center text-price">Free</p>
+              <p class="text-center">forever</p>
+              <hr>
+              <div class="px-4 py-3">
+                <p><i class="far fa-check-circle text-primary mr-2"></i>Custom login</p>
+                <p><i class="far fa-check-circle text-primary mr-2"></i>Access 100+ free courses</p>
+                <p><i class="far fa-check-circle text-primary mr-2"></i>2 hours learning continuously</p>
+              </div>
+
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="card" style="width: 20rem;">
+              <p class="text-center text-package mt-3">Professonal</p>
+              <p class="text-center text-price">$9</p>
+              <p class="text-center">per month</p>
+              <hr>
+              <div class="px-4 py-3">
+                <p><i class="far fa-check-circle text-primary mr-2"></i>All Starter features</p>
+                <p><i class="far fa-check-circle text-primary mr-2"></i>Access 50+ premium cours</p>
+                <p><i class="far fa-check-circle text-primary mr-2"></i>24 hours learning continuously</p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-5 pt-5">
+        <div class="col-sm-12 text-center">
+          <hr class="hr-simple">
+          <p class="title-customer">Download now</p>
+        </div>
+
+        <div class="row-downloadd d-flex justify-content-center mt-2 ">
+          <div class="">
+            <button class="btn btn-primary rounded-pill px-3 py-2"><i class="fab fa-apple"></i> APP
+              STORE</button>
+          </div>
+          <div class="ml-3">
+            <button class="btn btn-primary rounded-pill px-3 py-2"><i class=" fab fa-google-play"></i> GOOGLE
+              PLAY</button>
+          </div>
+        </div>
+
+
+
+      </div>
+
+      <!-- 5. Footer section -->
+      <div class="footer mt-5 pt-5">
+        <!-- Footer -->
+        <footer class="page-footer font-small blue pt-4">
+
+          <!-- Footer Links -->
+          <div class="container-fluid text-center text-md-left">
+
+            <!-- Grid row -->
+            <div class="row">
+
+              <!-- Grid column -->
+              <div class="col-md-3 mt-md-0 mt-3">
+
+                <!-- Content -->
+                <h5 class="">Fresh Mobile App </h5>
+                <p>Fresh Mobile App is an Education app built on React Native</p>
+
+              </div>
+              <!-- Grid column -->
+
+              <!-- <hr class="clearfix w-100 d-md-none pb-3"> -->
+              <div class="col-md-9">
+                <div class="row pl-5 ml-5">
+                  <!-- Grid column -->
+
+                  <div class="col-md-2 mb-md-0 mb-3 mx-4 ">
+
+                    <!-- Links -->
+                    <h5 class="">About</h5>
+
+                    <ul class="list-unstyled">
+                      <li>
+                        <a href="#!">About Us</a>
+                      </li>
+                      <li>
+                        <a href="#!">Team</a>
+                      </li>
+                      <li>
+                        <a href="#!">Blog</a>
+                      </li>
+
+                    </ul>
+
+                  </div>
+                  <!-- Grid column -->
+
+                  <!-- Grid column -->
+                  <div class="col-md-2 mb-md-0 mb-3 mx-4">
+
+                    <!-- Links -->
+                    <h5 class="">Services</h5>
+
+                    <ul class="list-unstyled">
+                      <li>
+                        <a href="#!">Design</a>
+                      </li>
+                      <li>
+                        <a href="#!">Design</a>
+                      </li>
+                      <li>
+                        <a href="#!">Branding</a>
+                      </li>
+
+                    </ul>
+
+                  </div>
+                  <!-- Grid column -->
+                  <!-- Grid column -->
+                  <div class="col-md-2 mb-md-0 mb-3 mx-4">
+
+                    <!-- Links -->
+                    <h5 class="">Help</h5>
+
+                    <ul class="list-unstyled">
+                      <li>
+                        <a href="#!">FAQs</a>
+                      </li>
+                      <li>
+                        <a href="#!">Docs</a>
+                      </li>
+                      <li>
+                        <a href="#!">Tutorials</a>
+                      </li>
+
+                    </ul>
+
+                  </div>
+                  <!-- Grid column -->
+                  <div class="col-md-2 mb-md-0 mb-3">
+
+                    <!-- Links -->
+                    <h5 class="">Contact</h5>
+
+                    <ul class="list-unstyled">
+                      <li>
+                        <a href="#!">Contact</a>
+                      </li>
+                      <li>
+                        <a href="#!">Email</a>
+                      </li>
+                      <li>
+                        <a href="#!">Chat</a>
+                      </li>
+
+                    </ul>
+
+                  </div>
+                  <!-- Grid column -->
+                </div>
+
+              </div>
+
+
+
+            </div>
+            <!-- Grid row -->
+
+          </div>
+          <!-- Footer Links -->
+
+          <!-- Copyright -->
+          <hr>
+          <div class="footer-copyright py-3">Copyright© 2022
+
+          </div>
+          <!-- Copyright -->
+
+        </footer>
+        <!-- Footer -->
+      </div>
+    </div>
+
+
+
+
+</body>
+
+</html>

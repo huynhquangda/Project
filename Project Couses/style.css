@@ -1,0 +1,42 @@
+.img-ionic {
+    max-width: 100%;
+    height: 500px;
+}
+
+.icon-search {}
+
+.row-slide-content {
+    width: 100%;
+
+}
+
+.text-ionic {
+    color: rgba(228, 225, 225, 0.813);
+}
+
+.row-card {
+    /* border: 1px solid red; */
+}
+
+.text-del-money {
+    color: rgba(196, 196, 196, 0.813);
+
+}
+.card-demo{
+    width: 16rem;
+}
+.has-search .form-control {
+    padding-left: 2.375rem;
+}
+
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+}

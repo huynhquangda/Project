@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Course 365 - Learning with unlimited!</title>
+
+  <!-- Nhúng các thư viện BS4 & jQuery, awesome font -->
+  <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script> -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+
+  <!-- Các file css và js tự định nghĩa thêm -->
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <!-- 1. Header - Navbar menu -->
+  <div class="header">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">
+        <img src="./images/Ionic_logo.png" width="80" height="" alt="">
+      </a>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Browse courses
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Web Development</a>
+              <a class="dropdown-item" href="#">Mobile App</a>
+              <a class="dropdown-item" href="#">Desktop App</a>
+
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              About Us
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Vision & Mission</a>
+              <a class="dropdown-item" href="#">Team</a>
+              <a class="dropdown-item" href="#">Contact Us</a>
+
+          </li>
+
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <div class="form-group has-search">
+            <span class="fa fa-search form-control-feedback"></span>
+            <input class="form-control mr-sm-2" type="search" placeholder="Search courses" aria-label="Search">
+          </div>
+
+          <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+
+        </form>
+      </div>
+    </nav>
+  </div>
+
+  <!-- 2. Slide body -->
+  <div class="slide-content bg-info mt-3">
+    <div class="row row-slide-content">
+      <div class="col-sm-6 my-auto">
+        <div class="row d-flex align-items-center">
+          <div class="col-sm-10 mx-auto">
+            <h3 class="text-white">Welcome to Inonic Courses365 Learning Center</h3>
+            <p class="text-ionic">Ionic Course365 is an online learning and teaching marketplace with
+              over 5000
+              courses
+              and 1 million
+              students. Instructor and expertly crafted courses, designed for the modern students and entrepreneur.</p>
+            <button class="btn btn-warning mr-3 mt-3">Browse Courses</button>
+            <button class="btn btn-light mt-3">Become an Instructor</button>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <img src="./images/ionic-207965.png" class="img-ionic" alt="">
+      </div>
+    </div>
+  </div>
+
+  <!-- 3. Courses content -->
+  <div class="courses-content container mt-5">
+    <div class="row mb-3">
+      <div class="col-sm-12">
+        <h3>Recommended to you</h3>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-3">
+        <div class="card " style="width: 16rem;">
+          <img class="card-img-top" src="images/courses/course-angular.jpg" alt="Card image cap">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-sm-10">
+                <h6 class="text-primary font-weight-bold">How to easy create a website with Angular</h6>
+              </div>
+
+            </div>
+
+            <div class="row pl-3">
+              <p><i class="far fa-clock mr-2"></i>3h 56m</p>
+              <p class="ml-3">Beginner</p>
+
+
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                <p class="font-weight-bold">$600 <del class="text text-del-money">$750</del></p>
+              </div>
+            </div>
+
+          </div>
+          <div class="card-footer">
+            <div class="row row-card">
+              <div class="col-sm-3">
+                <img src="./images/teacher/morris_mccoy.jpg" class="rounded-circle" height="40" alt="">
+              </div>
+              <div class="col-sm-7 text-left pt-2">
+                <p class="small">Morris Mccoy</p>
+              </div>
+              <div class="col-sm-2 text-right pt-2">
+                <i class="far fa-bookmark"></i>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+
+      </div>
+
+
+      <!--  card 2-->
+      <div class="col-sm-3">
+        <div class="card " style="width: 16rem;">
+          <img class="card-img-top" src="./images/courses/course-python.jpg" alt="Card image cap">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-sm-11">
+                <h6 class="text-primary font-weight-bold">The Python Courses:build web application</h6>
+              </div>
+
+            </div>
+
+            <div class="row pl-3">
+              <p><i class="far fa-clock mr-2"></i>4h 30m</p>
+              <p class="ml-3">advanced</p>
+
+
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                <p class="font-weight-bold">$900 <del class="text text-del-money">$1050</del></p>
+              </div>
+            </div>
+          </div>
+          <div class="card-footer">
+            <div class="row row-card">
+              <div class="col-sm-3">
+                <img src="./images/teacher/claire_robertson.jpg" class="rounded-circle" height="40" alt="">
+              </div>
+              <div class="col-sm-7 text-left pt-2">
+                <p class="small">Claire Robertson</p>
+              </div>
+              <div class="col-sm-2 text-right pt-2">
+                <i class="far fa-bookmark"></i>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+
+      </div>
+      <!-- end2 -->
+      <!-- card 3 -->
+      <div class="col-sm-3">
+        <div class="card " style="width: 16rem;">
+          <img class="card-img-top" src="./images/courses/course-graphql.jpg" alt="Card image cap">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-sm-10">
+                <h6 class="text-primary font-weight-bold">GraphQL:introduction graphQL for beginners</h6>
+              </div>
+
+            </div>
+
+            <div class="row pl-3">
+              <p><i class="far fa-clock mr-2"></i>2h 15m</p>
+              <p class="ml-3">intermediate</p>
+
+
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                <p class="font-weight-bold">$650 <del class="text text-del-money">$850</del></p>
+              </div>
+            </div>
+          </div>
+          <div class="card-footer">
+            <div class="row row-card">
+              <div class="col-sm-3">
+                <img src="./images/teacher/ted_hawkins.jpg" class="rounded-circle" height="40" alt="">
+              </div>
+              <div class="col-sm-7 text-left pt-2">
+                <p class="small">Ted Hawkins</p>
+              </div>
+              <div class="col-sm-2 text-right pt-2">
+                <i class="far fa-bookmark"></i>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+      <!-- end 3 -->
+      <!-- card 4 -->
+      <div class="col-sm-3">
+        <div class="card " style="width: 16rem;">
+          <img class="card-img-top" src="./images/courses/course-javascript.jpg" alt="Card image cap">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-sm-10">
+                <h6 class="text-primary font-weight-bold">Getting Started with JavaScript</h6>
+              </div>
+
+            </div>
+
+            <div class="row pl-3">
+              <p><i class="far fa-clock mr-2"></i>3h 34m</p>
+              <p class="ml-3">Beginner</p>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                <p class="font-weight-bold">$300 <del class="text text-del-money">$550</del></p>
+              </div>
+            </div>
+          </div>
+          <div class="card-footer">
+            <div class="row row-card">
+              <div class="col-sm-3">
+                <img src="./images/teacher/ted_hawkins.jpg" class="rounded-circle" height="40" alt="">
+              </div>
+              <div class="col-sm-7 text-left pt-2">
+                <p class="small">Ted Hawkins</p>
+              </div>
+              <div class="col-sm-2 text-right pt-2">
+                <i class="far fa-bookmark"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!-- end 4 -->
+
+    </div>
+    <!-- Popular -->
+    <div class="row mb-3 mt-4 pt-5">
+      <div class="col-sm-12">
+        <h3>Most Popular</h3>
+      </div>
+
+    </div>
+    <div id="row-popular" class="row">
+
+
+    </div>
+    <!-- end popular -->
+    <!-- Trending -->
+    <div id="row" class="row mb-3 mt-4 pt-5">
+      <div class="col-sm-12">
+        <h3>Trending</h3>
+      </div>
+
+    </div>
+    <div id="row-trending" class="row">
+
+
+    </div>
+
+    <!-- end Trending -->
+    <div class="row mb-3 mt-4 pt-5">
+      <h3 class="mx-3">All Courses</h3>
+      <button id="btn-create" class="btn btn-success"><i class="fas fa-plus-circle mr-2"></i>Thêm khóa học</button>
+      <div class="col-sm-6">
+
+
+      </div>
+      <div class="col-sm-6">
+
+      </div>
+
+    </div>
+    <div id="row-all-courses" class="row">
+
+    </div>
+
+
+    <!-- 4. Footer -->
+    <div class="footer mt-5 container">
+      <div class="row">
+        <div class="col-sm-6 text-center">
+          <p>© 2021 Ionic Course365. All Rights Reserved
+          </p>
+
+        </div>
+        <div class="col-sm-2"></div>
+        <div class="col-sm-4 ">
+          <div class="row">
+            <div class="col-sm-3 ">
+              <a href="">Privacy</a>
+            </div>
+            <div class="col-sm-3 ">
+              <a href="">Terms</a>
+            </div>
+            <div class="col-sm-3">
+              <a href="">Feedback</a>
+            </div>
+            <div class="col-sm-3 ">
+              <a href="">Support</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- modal create -->
+    <!--  -->
+    <div id="create-modal" class="modal" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Thêm khóa học mới</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <label for="">CourseCode</label>
+            <input class="form-control" type="text" name="" id="inp-courseCode">
+            <label for="">CourseName</label>
+            <input class="form-control" type="text" name="" id="inp-courseName">
+            <label for="">Price</label>
+            <input class="form-control" type="text" name="" id="inp-price">
+            <label for="">DiscountPrice</label>
+            <input class="form-control" type="text" name="" id="inp-discountPrice">
+            <label for="">Duration</label>
+            <input class="form-control" type="text" name="" id="inp-duration">
+            <label for="">Level</label>
+            <select name="" id="select-level" class="form-control">
+              <option value="">Chọn level</option>
+              <option value="Beginner">Beginner</option>
+              <option value="Intermediate">Intermediate</option>
+              <option value="Advanced">Advanced</option>
+            </select>
+            <label for="">CoverImage</label>
+            <form action="/action_page.php">
+              <label for="myfile">Select a file:</label>
+              <input type="file" id="img-course" name="myfile"><br><br>
+
+            </form>
+            <label for="">TeacherName</label>
+            <input class="form-control" type="text" name="" id="inp-teacherName">
+            <label for="">TeacherPhoto</label>
+
+            <label for="myfile">Select a file:</label>
+            <input type="file" id="img-teacher" name="myfile"><br><br>
+
+
+            <label for="">IsPopular</label>
+            <!-- radio -->
+            <form action="" id="form-popular">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="radio-popular" id="radio-popular-true" value="true">
+                <label class="form-check-label" for="flexRadioDisabled">
+                  True
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="radio-popular" id="radio-popular-false" value="false"
+                  checked>
+                <label class="form-check-label" for="flexRadioCheckedDisabled">
+                  false
+                </label>
+              </div>
+
+            </form>
+
+            <!-- end radio -->
+
+            <label for="">IsTrending</label>
+            <form action="" id="form-trending">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="radio-trending" id="radio-trending-true"
+                  value="true">
+                <label class="form-check-label" for="flexRadioDisabled">
+                  True
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="radio-trending" id="radio-trending-false"
+                  value="false" checked>
+                <label class="form-check-label" for="flexRadioCheckedDisabled">
+                  false
+                </label>
+              </div>
+            </form>
+
+
+          </div>
+          <div class="modal-footer">
+            <button id="btn-create-save" type="button" class="btn btn-primary">Save changes</button>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end modal -->
+    <!-- modal update -->
+    <div id="update-modal" class="modal" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Sửa khóa học</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <label for="">CourseCode</label>
+            <input class="form-control" type="text" name="" id="inp-courseCode-up">
+            <label for="">CourseName</label>
+            <input class="form-control" type="text" name="" id="inp-courseName-up">
+            <label for="">Price</label>
+            <input class="form-control" type="text" name="" id="inp-price-up">
+            <label for="">DiscountPrice</label>
+            <input class="form-control" type="text" name="" id="inp-discountPrice-up">
+            <label for="">Duration</label>
+            <input class="form-control" type="text" name="" id="inp-duration-up">
+            <label for="">Level</label>
+            <select name="" id="select-level-up" class="form-control">
+              <option value="">Chọn level</option>
+              <option value="Beginner">Beginner</option>
+              <option value="Intermediate">Intermediate</option>
+              <option value="Advanced">Advanced</option>
+            </select>
+            <label for="">CoverImage</label>
+            <form action="/action_page.php">
+              <label for="myfile">Select a file:</label>
+              <input type="file" id="img-course-up" name="myfile"><br><br>
+
+            </form>
+            <label for="">TeacherName</label>
+            <!-- <input class="form-control" type="text" name="" id="teacher-name-abc"> -->
+            <input class="form-control" type="text" name="" id="inp-teacher-name-up">
+            <label for="">TeacherPhoto</label>
+            <label for="myfile">Select a file:</label>
+            <input type="file" id="img-teacher-up" name="myfile"><br><br>
+
+
+            <label for="">IsPopular</label>
+            <!-- radio -->
+            <form action="" id="form-popular-up">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="radio-popular" id="radio-popular-true" value="true">
+                <label class="form-check-label" for="flexRadioDisabled">
+                  True
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="radio-popular" id="radio-popular-false" value="false"
+                  checked>
+                <label class="form-check-label" for="flexRadioCheckedDisabled">
+                  false
+                </label>
+              </div>
+
+            </form>
+
+            <!-- end radio -->
+
+            <label for="">IsTrending</label>
+            <form action="" id="form-trending-up">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="radio-trending" id="radio-trending-true"
+                  value="true">
+                <label class="form-check-label" for="flexRadioDisabled">
+                  True
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="radio-trending" id="radio-trending-false"
+                  value="false" checked>
+                <label class="form-check-label" for="flexRadioCheckedDisabled">
+                  false
+                </label>
+              </div>
+            </form>
+
+
+          </div>
+          <div class="modal-footer">
+            <button id="btn-update-save" type="button" class="btn btn-primary">Upadte</button>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end modal -->
+    <!-- modal delete -->
+    <div id="delete-modal" class="modal" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Xóa khóa học</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>Xóa khóa học này</p>
+          </div>
+          <div class="modal-footer">
+            <button id="btn-delete-save" type="button" class="btn btn-primary">Delete Save</button>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end modal -->
+
+
+
+
+</body>
+
+</html>
